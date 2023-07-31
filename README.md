@@ -1,49 +1,27 @@
-# Meditapp - Application Web de Méditation
+# Meditapp
 
-![Meditapp](link-to-your-logo.png)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
 
-Meditapp est une application web de méditation simple et intuitive réalisée dans le cadre d'un stage par Fabien PIERRARD et Kerny LAGUERRE, sous la supervision de notre maître de stage, Sayah EL YATIM. Cette application vous aide à pratiquer la méditation de manière apaisante et guidée, que vous soyez débutant ou expérimenté en méditation. Medito vous offre une expérience de méditation personnalisable pour vous aider à vous détendre, à vous concentrer et à trouver la paix intérieure.
+## Development server
 
-## Fonctionnalités principales
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-- **Timer de méditation personnalisable** : Définissez la durée de votre séance de méditation jusqu'à 60 minutes pour vous adapter à vos besoins et préférences.
+## Code scaffolding
 
-- **Gong de fin de méditation** : Le gong doux vous guide en douceur vers la fin de votre séance de méditation, vous permettant de revenir à votre état de conscience habituel de manière paisible.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-- **Sons d'ambiance naturels** : Choisissez entre des sons apaisants de la mer ou de la montagne pour créer un environnement calme et propice à la méditation.
+## Build
 
-- **Gong discret de rappel** : Activez un gong discret qui retentit toutes les 5, 15 ou 30 minutes pour vous rappeler de rester présent et concentré pendant votre méditation.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-- **Application évolutive et libre de droit** : Medito est un projet open-source en constante évolution. Vous pouvez contribuer au développement et l'utiliser librement selon vos besoins.
+## Running unit tests
 
-## Comment utiliser Medito
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-1. Accédez à l'application Meditapp via le lien [www.###.com](https://www.#.com).
+## Running end-to-end tests
 
-2. Définissez la durée de votre séance de méditation en utilisant le timer.
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-3. Choisissez le son d'ambiance que vous préférez, soit le son de la mer, soit le son de la montagne.
+## Further help
 
-4. Activez le gong discret de rappel toutes les 5, 15 ou 30 minutes si vous le souhaitez.
-
-5. Cliquez sur le bouton "Démarrer" pour commencer votre séance de méditation.
-
-6. Laissez-vous guider par le son du gong pour terminer votre méditation en douceur.
-
-## Contribution
-
-Meditapp est un projet open-source et nous accueillons les contributions de la communauté. Si vous souhaitez améliorer l'application, ajouter de nouvelles fonctionnalités ou corriger des bugs, n'hésitez pas à créer une pull request.
-
-## Licence
-
-Meditapp est sous licence [MIT](https://opensource.org/licenses/MIT). Vous êtes libre de l'utiliser, de la partager et de la modifier selon les termes de cette licence.
-
-## Remarque
-
-Meditapp est actuellement en version bêta, nous vous encourageons à nous faire part de vos commentaires et suggestions pour nous aider à améliorer l'application.
-
-**Méditez en paix avec Medito !** 🧘‍♀️🌿
-
-*Fabien PIERRARD*
- / 
-*Kerny LAGUERRE*
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

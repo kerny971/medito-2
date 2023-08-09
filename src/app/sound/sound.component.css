@@ -1,0 +1,33 @@
+
+.sound-effect {
+    text-align: center;
+  }
+
+  .sound-effect > p {
+    color: grey;
+    font-size: 1.2em;
+  }
+
+  .row-sound {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 12px;
+    padding: 15px 0px;
+  }
+
+  .row-sound > button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: grey;
+  }
+
+  .row-sound img {
+    width: 45px;
+  }
+
+  .button-active {
+    background-color: #00a2ff; 
+    color: white;
+  }

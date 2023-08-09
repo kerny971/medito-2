@@ -1,0 +1,27 @@
+<main>
+    <div class="container container-main">
+        <img class="img-principale" src="/assets/images/meditation.jpg" alt="Personne méditant" />
+        <app-timer
+            [gongAudio]="gongAudio" 
+            [gongIsEnable]="gongIsEnable"
+            [(currentTimeGong)]="currentTimeGong"
+            [initialTimeGong]="initialTimeGong"
+            [(isStarted)]="isStarted"
+            [seaAudio]="seaAudio"
+            [forestAudio]="forestAudio"
+            (setStartTimerEvent)="setIsStarted"
+        ></app-timer>
+        <app-gong
+            [(gongIsEnable)]="gongIsEnable"
+            [currentTimeGong]="currentTimeGong"
+            [isStarted]="isStarted"
+            (newGongEvent)="toggleGong($event)"
+            (setGongTimeEvent)="setGongTime($event)"
+        ></app-gong>
+        <app-sound
+            [(seaAudio)]="seaAudio"
+            [(forestAudio)]="forestAudio"
+            [isStarted]="isStarted"
+        ></app-sound>
+    </div>
+</main>

@@ -1,0 +1,23 @@
+main {
+    position: relative;
+    top: 30%;
+    transform: translateY(-25%);
+}
+  
+.container {
+    margin: 0 auto;
+    min-width: 250px;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.container-main {
+    text-align: center;
+}
+
+.img-principale {
+    width: 50%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}

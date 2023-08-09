@@ -1,0 +1,55 @@
+<div *ngIf="isStarted">
+    <div *ngIf="gongIsEnable">
+        Gong dans {{ currentTimeGong.minutes | number: '2.0-0' }} : {{ currentTimeGong.secondes | number: '2.0-0' }}
+    </div>
+    <div *ngIf="!gongIsEnable">
+        Le Gong récurrent désactivé.
+    </div>
+</div>
+
+<div *ngIf="!isStarted" class="gong">
+    <div class="select-gong-time">
+        <mat-form-field>
+            <mat-label>gong every</mat-label>
+            <select (change)="setGongTime($event.target)" title="gong-time" matNativeControl>
+                <option value="60">1 min</option>
+                <option value="120">2 min</option>
+                <option value="180">3 min</option>
+                <option value="300">5 min</option>
+                <option value="600">10 min</option>
+                <option value="900">15 min</option>
+                <option value="1200">20 min</option>
+                <option value="1500">25 min</option>
+                <option value="1800">30 min</option>
+            </select>
+        </mat-form-field>
+    </div>
+    <div class="gong-switch">
+        <div class="infoGong">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto iste odit aperiam repellat voluptatum assumenda.
+            </p>
+        </div>
+        <span class="gong-icon">
+            <span class="material-icons">help_outline</span>Gong
+        </span>
+        <label class="switch">
+            <input type="checkbox" title="gongIsEnable" placeholder="" id="gong-check" (change)="toggleGong($event.target)" [checked]="gongIsEnable" />
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <!-- <div class="btn-gong-time">
+        <button data-time="300" class="button-active-gong">
+            <div>5 min</div>
+            <div class="underline-gong"></div>
+        </button>
+        <button data-time="900" class="button-active-gong">
+            <div>15 min</div>
+            <div class="underline-gong"></div>
+        </button>
+        <button data-time="1800" class="button-active-gong">
+            <div>30 min</div>
+            <div class="underline-gong"></div>
+        </button>
+    </div> -->
+</div>

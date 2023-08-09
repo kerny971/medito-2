@@ -1,0 +1,45 @@
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    max-width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.timer span {
+  font-family: initial;
+}
+
+.number-timer {
+    width: 90px;
+    text-align: center;
+    font-size: 2em;
+    background: none;
+    border-radius: .2em;
+    border: none;
+}
+
+.number-timer-start {
+    background: none;
+}
+
+.timer-start {
+    background: none;
+    gap: .5em;
+}
+
+.remain-time {
+    line-height: 1em;
+    font-size: .7em;
+    font-weight: 200;
+    text-align: right;
+}
+
+.start-timer,
+.pause-timer {
+    padding: 2em;
+    margin: 2em 0;
+}

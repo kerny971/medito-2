@@ -1,0 +1,17 @@
+<div *ngIf="isStarted === false" class="timer" id="timer" >
+    <input (keyup)="updateMinutes($event)" maxlength="2" class="number-timer" value="{{ strMinutes }}" id="number-timer-minutes" type="text" placeholder="{{ strMinutes }}"/>
+    <span>:</span>
+    <input (keyup)="updateSeconds($event)" maxlength="2" value="{{ strSeconds }}" class="number-timer" id="number-timer-seconds" type="text" placeholder="{{ strSeconds}}"/>
+</div>
+<div *ngIf="isStarted === true" class="timer timer-start">
+    <div class="remain-time">
+        Remaining time
+    </div>
+    <div class="number-timer number-timer-start">{{ minutes | number: '2.0-0' }}</div> : <div class="number-timer number-timer-start">{{ seconds | number: '2.0-0' }}</div>
+</div>
+<button *ngIf="isStarted === false" (click)="startTimer()" mat-raised-button color="primary" class="start-timer">
+    Start
+</button>
+<button *ngIf="isStarted === true" (click)="stopTimer()" mat-raised-button color="warn"  class="pause-timer">
+    Pause
+</button>

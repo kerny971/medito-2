@@ -1,20 +1,31 @@
 <div class="sound-effect">
-    <p>Sound effect</p>
-    <div class="row-sound">
-        <button (click)="disableSound()" class="button-active" data-sound="no-sound">
-            <img src="./assets/images/no-sound 64x64.png" alt="No sound" />
-            <div>No sound</div>
-            <div class="underline"></div>
-        </button>
-        <button (click)="toggleSoundSea()" class="button-active" data-sound="sea">
-            <img src="./assets/images/sunset 64x64.png" alt="Sea" />
-            <div>Sea</div>
-            <div class="underline"></div>
-        </button>
-        <button (click)="toggleSoundForest()" class="button-active" data-sound="forest">
-            <img src="./assets/images/forest 64x64.png" alt="Forest" />
-            <div>Forest</div>
-            <div class="underline"></div>
-        </button>
-    </div>
+  <p>Sound effect</p>
+  <div class="row-sound">
+    <button
+      (click)="toggleSound('no-sound')"
+      [class.button-active]="selectedSound === 'no-sound'"
+      mat-raised-button
+    >
+      <mat-icon>volume_off</mat-icon>
+      <div>No sound</div>
+    </button>
+    <button
+      (click)="toggleSound('sea')"
+      [class.button-active]="selectedSound === 'sea'"
+      mat-raised-button
+      color="primary"
+    >
+      <mat-icon>waves</mat-icon>
+      <div>Sea</div>
+    </button>
+    <button
+      (click)="toggleSound('forest')"
+      [class.button-active]="selectedSound === 'forest'"
+      mat-raised-button
+      color="primary"
+    >
+      <mat-icon>tree</mat-icon>
+      <div>Forest</div>
+    </button>
+  </div>
 </div>

@@ -5,7 +5,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgxRerenderModule } from 'ngx-rerender';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,7 @@ import { MainComponent } from './main/main.component';
 import { TimerComponent } from './timer/timer.component';
 import { GongComponent } from './gong/gong.component';
 import { SoundComponent } from './sound/sound.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { SoundComponent } from './sound/sound.component';
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
-    NgxRerenderModule
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

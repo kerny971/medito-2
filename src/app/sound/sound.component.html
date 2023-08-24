@@ -3,7 +3,7 @@
   <div class="row-sound">
     <button
       (click)="toggleSound('no-sound')"
-      [class.button-active]="selectedSound === 'no-sound'"
+      [class.selectedSound]="selectedSound === 'no-sound'"
       mat-raised-button
     >
       <mat-icon>volume_off</mat-icon>
@@ -11,7 +11,7 @@
     </button>
     <button
       (click)="toggleSound('sea')"
-      [class.button-active]="selectedSound === 'sea'"
+      [class.selectedSound]="selectedSound === 'sea'"
       mat-raised-button
       color="primary"
     >
@@ -20,7 +20,7 @@
     </button>
     <button
       (click)="toggleSound('forest')"
-      [class.button-active]="selectedSound === 'forest'"
+      [class.selectedSound]="selectedSound === 'forest'"
       mat-raised-button
       color="primary"
     >

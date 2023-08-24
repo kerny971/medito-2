@@ -23,12 +23,16 @@ export class SoundComponent {
     if (sound === 'sea') {
       // Logique pour activer le son de la mer
       this.forestAudio?.pause();
+      this.seaAudio.loop = true;
       this.seaAudio?.play();
+      this.selectedSound = sound;
       this.seaAudioChange.emit(this.seaAudio);
     } else if (sound === 'forest') {
       // Logique pour activer le son de la forêt
       this.seaAudio?.pause();
+      this.forestAudio.loop = true;
       this.forestAudio?.play();
+      this.selectedSound = sound;
       this.forestAudioChange.emit(this.forestAudio);
     } else {
       // Désactiver tous les sons

@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-sound',
@@ -13,7 +14,34 @@ export class SoundComponent {
   @Output() forestAudioChange = new EventEmitter<HTMLAudioElement>();
   @Input() isStarted: boolean = false;
 
-  toggleSoundSea() : void {
+  selectedSound: string = 'no-sound';
+
+
+  toggleSound(sound: string): void {
+    this.selectedSound = sound;
+
+    if (sound === 'sea') {
+      // Logique pour activer le son de la mer
+      this.forestAudio?.pause();
+      this.seaAudio.loop = true;
+      this.seaAudio?.play();
+      this.selectedSound = sound;
+      this.seaAudioChange.emit(this.seaAudio);
+    } else if (sound === 'forest') {
+      // Logique pour activer le son de la forêt
+      this.seaAudio?.pause();
+      this.forestAudio.loop = true;
+      this.forestAudio?.play();
+      this.selectedSound = sound;
+      this.forestAudioChange.emit(this.forestAudio);
+    } else {
+      // Désactiver tous les sons
+      this.seaAudio.pause();
+      this.forestAudio.pause();
+    }
+  }
+
+  /*toggleSoundSea() : void {
     console.log('sound sea');
     console.log(this.isStarted);
     if (this.isStarted) {
@@ -36,5 +64,6 @@ export class SoundComponent {
   disableSound() : void {
     this.seaAudio.pause();
     this.forestAudio.pause();
-  }
+  }*/
 }
+

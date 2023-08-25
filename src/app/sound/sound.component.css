@@ -1,4 +1,6 @@
 
+
+
 .sound-effect {
     text-align: center;
   }
@@ -16,18 +18,23 @@
     padding: 15px 0px;
   }
 
-  .row-sound > button {
+  .row-sound button {
     border: none;
     background: none;
     cursor: pointer;
     color: grey;
   }
 
+  .row-sound button.selectedSound {
+    background-color: #1207a2;
+    color: white;
+  }
+
   .row-sound img {
     width: 45px;
   }
 
-  .button-active {
-    background-color: #00a2ff; 
-    color: white;
-  }
+  
+
+  
+
